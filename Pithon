@@ -23,5 +23,5 @@ else:
     t.speed(1)
     t.pensize(5)
     t.color("red")
-    t.write("ERROR", align="center", font=("Arial", 40, "bold"))
+    t.write("PAROL NOTO'G'RI", align="center", font=("Arial", 40, "bold"))
     turtle.done()
