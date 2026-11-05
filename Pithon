@@ -1,0 +1,27 @@
+import subprocess
+import turtle
+n=input("Parolni kiriting:")
+m=[114, 97, 115, 115, 121, 111, 48, 55, 48, 53]
+c=[114, 97, 115, 115, 48, 49, 49]
+if n=="".join(chr(i) for i in c):
+    print("Ochilmoqda...")
+    subprocess.Popen([
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"--user-data-dir=C:\Users\Siz\Documents\GizliChrome",
+    ])
+elif n=="".join(chr(i) for i in m):
+    print("Ochilmoqda...")
+    subprocess.Popen([
+    r"C:\Users\user\AppData\Roaming\.minecraft\TLauncher.exe"
+    ])
+else:
+    print("PAROL NOTO'G'RI")
+    t=turtle.Turtle()
+    s=turtle.Screen()
+    s.bgcolor("black")
+    t.hideturtle()
+    t.speed(1)
+    t.pensize(5)
+    t.color("red")
+    t.write("ERROR", align="center", font=("Arial", 40, "bold"))
+    turtle.done()
